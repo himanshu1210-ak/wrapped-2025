@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our 2025 Wrapped</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <p id="loaderText">Analyzing 2025…</p>
+  <div class="loader-bar">
+    <div id="loaderFill"></div>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="hidden">
+
+  <!-- SLIDE 0 -->
+  <section class="slide active">
+    <h1>Our 2025. Wrapped.</h1>
+    <p>No filters. No skips.</p>
+    <button onclick="nextSlide()">Start the Wrap</button>
+  </section>
+
+  <!-- SLIDE 1 -->
+  <section class="slide">
+    <h1 class="giant">PURELY CHAOTIC</h1>
+    <p>But not in the way you expected</p>
+    <div class="photo-row">
+      <img src="assets/y1.jpg">
+      <img src="assets/y2.jpg">
+      <img src="assets/y3.jpg">
+      <img src="assets/y4.jpg">
+      <img src="assets/y5.jpg">
+    </div>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 2 -->
+  <section class="slide">
+    <h2>Main Character Energy</h2>
+    <p>Main Character Energy: <strong>93.68%</strong></p>
+    <p>Total amount of yapping: <strong>68,492 minutes</strong></p>
+    <p>bullshit talks: <strong>MOSTLY</strong></p>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 3 -->
+  <section class="slide">
+    <h2>Mood of 2025</h2>
+    <h1>SARDARD</h1>
+    <div class="photo-row">
+      <img src="assets/m1.jpg">
+      <img src="assets/m2.jpg">
+      <img src="assets/m3.jpg">
+      <img src="assets/m4.jpg">
+      <img src="assets/m5.jpg">
+    </div>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 4 -->
+  <section class="slide">
+    <h2>Peak Month</h2>
+    <h1>NOVEMBER</h1>
+    <p>I don’t think I have to explain why</p>
+    <p>feb=back ki chinta, july=rona dhona, mostly=darrubazi ofc without me, whole year nearly= hinge ka cringe</p>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 5 -->
+  <section class="slide">
+    <h2>Villain Arc Activated</h2>
+    <p>august to oct = side chicks collection arc</p>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 6 -->
+  <section class="slide">
+    <h2>Most Replayed Memory</h2>
+    <p>
+      ek chutiye ka chhodbhangda who vapes like yuck and every worst scenerios I said wo sach ho jana
+    </p>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 7 -->
+  <section class="slide">
+    <h2>Overthinking Stats</h2>
+    <ul>
+      <li>24658 times</li>
+      <li>Overthinking about every little shit</li>
+      <li>things learned from this = our iq(0)</li>
+    </ul>
+    <div class="photo-row">
+      <img src="assets/o1.jpg">
+      <img src="assets/o2.jpg">
+    </div>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 8 -->
+  <section class="slide">
+    <h2>People of the Year</h2>
+
+    <input id="comfort" placeholder="Comfort person">
+    <input id="chaos" placeholder="Chaos contributor">
+    <input id="constant" placeholder="Unexpected constant">
+    <input id="hateful" placeholder="Most hateful">
+
+    <p><strong>Best : ofc me you have no options bishhhhhhh…..</strong></p>
+
+    <button onclick="savePeople()">Next</button>
+  </section>
+
+  <!-- SLIDE 9 -->
+  <section class="slide">
+    <h2>They Defined Your 2025</h2>
+    <div id="peopleResult"></div>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- LETTER SLIDE -->
+<section class="slide">
+  <h2>A Letter for You</h2>
+
+  <div class="letter-box">
+    <p>NOTHING SPECIAL HERE </p> <p>ITS JUST THE 2025 WRAPPED</p> <p>IN THIS WHATEVER IT IS, ITS JUST A SMALL SHIT FOR NOT JUDGING ME AND ACCEPTING ME AS THE BEST HB TO EXIST</p> <p> DON’T THANK ME IK I M THE BEST SO PLZZ 3 JODI KAPDE PARCEL HEHEHHEHEHHEHE……..
+    </p>
+
+    <p><strong>— Always on your side</strong></p>
+  </div>
+
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+
+  <!-- SLIDE 10 -->
+  <section class="slide">
+    <h2>2025 in Memories</h2>
+    <div class="memory-grid">
+      <img src="assets/mem1.jpg">
+      <img src="assets/mem2.jpg">
+      <img src="assets/mem3.jpg">
+      <img src="assets/mem4.jpg">
+      <img src="assets/mem5.jpg">
+      <img src="assets/mem6.jpg">
+      <img src="assets/mem7.jpg">
+      <img src="assets/mem8.jpg">
+      <img src="assets/mem9.jpg">
+      <img src="assets/mem10.jpg">
+    </div>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 11 -->
+  <section class="slide">
+    <h1>2026 is loading…</h1>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- SLIDE 12 -->
+  <section class="slide">
+    <h1>That was your year.</h1>
+    <p>Thanks for letting me wrap it.</p>
+    <button onclick="restart()">Replay</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

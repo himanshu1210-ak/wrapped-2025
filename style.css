@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+  }
+  
+  body {
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* PRELOADER */
+  #preloader {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader-bar {
+    width: 300px;
+    height: 8px;
+    background: #222;
+    margin-top: 20px;
+  }
+  
+  #loaderFill {
+    height: 100%;
+    width: 0%;
+    background: #1db954;
+  }
+  
+  /* SLIDES */
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .slide.active {
+    display: flex;
+  }
+  
+  /* TEXT */
+  h1 { font-size: 4rem; margin-bottom: 20px; }
+  h2 { font-size: 2.5rem; margin-bottom: 20px; }
+  p, li { font-size: 1.3rem; }
+  
+  .giant { font-size: 5rem; }
+  
+  /* BUTTON */
+  button {
+    margin-top: 30px;
+    padding: 16px 40px;
+    font-size: 1.2rem;
+    background: #1db954;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  
+  /* IMAGES */
+  .photo-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .photo-row img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .memory-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .memory-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* INPUT */
+  input {
+    width: 260px;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* LETTER */
+.letter-box {
+    max-width: 700px;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    text-align: left;
+  }
+  
+  .letter-box p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+  .slide {
+    background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url("assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+    
